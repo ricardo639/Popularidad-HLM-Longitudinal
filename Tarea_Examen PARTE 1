@@ -17,7 +17,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 2,
+      "execution_count": null,
       "metadata": {
         "id": "u351mKMngQG6",
         "outputId": "2c427d33-01fb-47ee-9b10-effe27447db0",
@@ -91,7 +91,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 3,
+      "execution_count": null,
       "metadata": {
         "id": "jfyT61uOgQG9"
       },
@@ -111,7 +111,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 4,
+      "execution_count": null,
       "metadata": {
         "id": "WSxPPLYzgQG9",
         "outputId": "1931099f-87ad-411f-9fb5-c239cbc69b48",
@@ -545,7 +545,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 9,
+      "execution_count": null,
       "metadata": {
         "id": "1BcBpu6_gQG-"
       },
@@ -564,7 +564,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 10,
+      "execution_count": null,
       "metadata": {
         "id": "lJDY040AgQG_",
         "outputId": "552bf1fc-06c1-4e4e-aaa0-8ad663b9e777",
@@ -960,7 +960,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 12,
+      "execution_count": null,
       "metadata": {
         "id": "W-ZSfS6hgQG_",
         "outputId": "d906bd0b-4bb2-4aa6-d112-f9ce07551b83",
@@ -1407,7 +1407,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 13,
+      "execution_count": null,
       "metadata": {
         "id": "sqx3C822gQHA",
         "outputId": "965b6ff2-3757-4a43-ca7d-8cead87918ec",
@@ -1474,7 +1474,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 19,
+      "execution_count": null,
       "metadata": {
         "id": "2a7jrQwfgQHA"
       },
@@ -1497,43 +1497,37 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 20,
+      "execution_count": 32,
       "metadata": {
         "id": "uTS28se0gQHA"
       },
       "outputs": [],
       "source": [
         "# Establecemos la hipótesis\n",
-        "hypotheses_1 = 'Ltotcost ~  One +  +  = 1'"
+        "hypotheses_1 = 'Lplabor + Lpfuel + Lpkap= 1'"
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": 21,
+      "execution_count": 33,
       "metadata": {
         "id": "hw_9hqUIgQHA",
-        "outputId": "9e045084-ced0-48bb-f047-7b4662fc43a5",
+        "outputId": "f921e02a-6a86-4163-b915-9eabcd220bbc",
         "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 356
+          "base_uri": "https://localhost:8080/"
         }
       },
       "outputs": [
         {
-          "output_type": "error",
-          "ename": "PatsyError",
-          "evalue": "expected a noun, not '='\n     +  +  = 1\n           ^",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mPatsyError\u001b[0m                                Traceback (most recent call last)",
-            "\u001b[0;32m<ipython-input-21-10ae90910358>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# Prueba de la hipótesis:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mt_test_1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mresults\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mt_test\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mhypotheses_1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt_test_1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/statsmodels/base/model.py\u001b[0m in \u001b[0;36mt_test\u001b[0;34m(self, r_matrix, cov_p, use_t)\u001b[0m\n\u001b[1;32m   1643\u001b[0m         \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1644\u001b[0m             \u001b[0mnames\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmodel\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcov_names\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1645\u001b[0;31m         \u001b[0mLC\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mDesignInfo\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mnames\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlinear_constraint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mr_matrix\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1646\u001b[0m         \u001b[0mr_matrix\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mq_matrix\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mLC\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcoefs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mLC\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mconstants\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1647\u001b[0m         \u001b[0mnum_ttests\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mr_matrix\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mshape\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/patsy/design_info.py\u001b[0m in \u001b[0;36mlinear_constraint\u001b[0;34m(self, constraint_likes)\u001b[0m\n\u001b[1;32m    557\u001b[0m           \u001b[0mdi\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlinear_constraint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"x1 = x2 = 3\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    558\u001b[0m         \"\"\"\n\u001b[0;32m--> 559\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mlinear_constraint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mconstraint_likes\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcolumn_names\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    560\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    561\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mdescribe\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/patsy/constraint.py\u001b[0m in \u001b[0;36mlinear_constraint\u001b[0;34m(constraint_like, variable_names)\u001b[0m\n\u001b[1;32m    422\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0misinstance\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcode\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    423\u001b[0m                 \u001b[0;32mraise\u001b[0m \u001b[0mValueError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"expected a string, not %r\"\u001b[0m \u001b[0;34m%\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mcode\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 424\u001b[0;31m             \u001b[0mtree\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mparse_constraint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcode\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvariable_names\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    425\u001b[0m             \u001b[0mevaluator\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_EvalConstraint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvariable_names\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    426\u001b[0m             \u001b[0mconstraints\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mevaluator\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0meval\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtree\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mconstraint\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/patsy/constraint.py\u001b[0m in \u001b[0;36mparse_constraint\u001b[0;34m(string, variable_names)\u001b[0m\n\u001b[1;32m    256\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    257\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mparse_constraint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstring\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvariable_names\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 258\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0minfix_parse\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0m_tokenize_constraint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mstring\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mvariable_names\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0m_ops\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0m_atomic\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    259\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    260\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/patsy/infix_parser.py\u001b[0m in \u001b[0;36minfix_parse\u001b[0;34m(tokens, operators, atomic_types, trace)\u001b[0m\n\u001b[1;32m    232\u001b[0m             \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Reading next token (want_noun=%r)\"\u001b[0m \u001b[0;34m%\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mwant_noun\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    233\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mwant_noun\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 234\u001b[0;31m             \u001b[0mwant_noun\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_read_noun_context\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtoken\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mc\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    235\u001b[0m         \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    236\u001b[0m             \u001b[0mwant_noun\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0m_read_op_context\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtoken\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mc\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/patsy/infix_parser.py\u001b[0m in \u001b[0;36m_read_noun_context\u001b[0;34m(token, c)\u001b[0m\n\u001b[1;32m    152\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0;32mFalse\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    153\u001b[0m     \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 154\u001b[0;31m         raise PatsyError(\n\u001b[0m\u001b[1;32m    155\u001b[0m             \u001b[0;34m\"expected a noun, not '%s'\"\u001b[0m \u001b[0;34m%\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mtoken\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0morigin\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrelevant_code\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtoken\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    156\u001b[0m         )\n",
-            "\u001b[0;31mPatsyError\u001b[0m: expected a noun, not '='\n     +  +  = 1\n           ^"
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "                             Test for Constraints                             \n",
+            "==============================================================================\n",
+            "                 coef    std err          t      P>|t|      [0.025      0.975]\n",
+            "------------------------------------------------------------------------------\n",
+            "c0             0.6720      0.102     -3.221      0.002       0.470       0.874\n",
+            "==============================================================================\n"
           ]
         }
       ],
@@ -1562,7 +1556,7 @@
       "outputs": [],
       "source": [
         "# Establecemos la hipótesis #logaritmo\n",
-        "hypotheses_2 = ' +  +  = 1'"
+        "hypotheses_2 = ' +  +  = 0'"
       ]
     },
     {
@@ -1628,10 +1622,10 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 22,
+      "execution_count": 34,
       "metadata": {
         "id": "4lZCdkzCgQHC",
-        "outputId": "cdf373a3-b9e6-4980-dd46-a23dbbfe490a",
+        "outputId": "28f9ffe6-b037-4636-bd25-3aec68e75b23",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 424
@@ -1659,7 +1653,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-02c18dc7-9723-4b6e-96bb-33957373a885\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-09c93d24-70e0-4aa1-9638-c32c064d7105\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -1793,7 +1787,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-02c18dc7-9723-4b6e-96bb-33957373a885')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-09c93d24-70e0-4aa1-9638-c32c064d7105')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -1845,12 +1839,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-02c18dc7-9723-4b6e-96bb-33957373a885 button.colab-df-convert');\n",
+              "        document.querySelector('#df-09c93d24-70e0-4aa1-9638-c32c064d7105 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-02c18dc7-9723-4b6e-96bb-33957373a885');\n",
+              "        const element = document.querySelector('#df-09c93d24-70e0-4aa1-9638-c32c064d7105');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -1870,8 +1864,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "<div id=\"df-93846bbd-b4be-4a3e-8d39-1e715b9913a1\">\n",
-              "  <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-93846bbd-b4be-4a3e-8d39-1e715b9913a1')\"\n",
+              "<div id=\"df-23c9a24f-07ab-4d50-aa92-1d2959d4c94d\">\n",
+              "  <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-23c9a24f-07ab-4d50-aa92-1d2959d4c94d')\"\n",
               "            title=\"Suggest charts\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -1990,14 +1984,14 @@
               "    }\n",
               "    (() => {\n",
               "      let quickchartButtonEl =\n",
-              "        document.querySelector('#df-93846bbd-b4be-4a3e-8d39-1e715b9913a1 button');\n",
+              "        document.querySelector('#df-23c9a24f-07ab-4d50-aa92-1d2959d4c94d button');\n",
               "      quickchartButtonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "    })();\n",
               "  </script>\n",
               "</div>\n",
               "\n",
-              "  <div id=\"id_4577c4eb-8191-45a1-92bd-53a6cbdf27b4\">\n",
+              "  <div id=\"id_015794b7-1320-4863-aba7-9b8775f56e1d\">\n",
               "    <style>\n",
               "      .colab-df-generate {\n",
               "        background-color: #E8F0FE;\n",
@@ -2041,7 +2035,7 @@
               "    <script>\n",
               "      (() => {\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#id_4577c4eb-8191-45a1-92bd-53a6cbdf27b4 button.colab-df-generate');\n",
+              "        document.querySelector('#id_015794b7-1320-4863-aba7-9b8775f56e1d button.colab-df-generate');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
@@ -2062,7 +2056,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 22
+          "execution_count": 34
         }
       ],
       "source": [
@@ -2075,10 +2069,10 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 23,
+      "execution_count": 35,
       "metadata": {
         "id": "W9uzcDbBgQHC",
-        "outputId": "848c69f6-106f-42c1-ddf6-4a720fb5a521",
+        "outputId": "8b93d9d9-6834-45f3-c2c6-f002b7843660",
         "colab": {
           "base_uri": "https://localhost:8080/"
         }
@@ -2094,7 +2088,7 @@
             "Model:                            OLS   Adj. R-squared:                  0.995\n",
             "Method:                 Least Squares   F-statistic:                     4015.\n",
             "Date:                Wed, 26 Mar 2025   Prob (F-statistic):          5.72e-107\n",
-            "Time:                        14:17:04   Log-Likelihood:                 88.763\n",
+            "Time:                        17:13:09   Log-Likelihood:                 88.763\n",
             "No. Observations:                  99   AIC:                            -165.5\n",
             "Df Residuals:                      93   BIC:                            -150.0\n",
             "Df Model:                           5                                         \n",
@@ -2147,7 +2141,7 @@
       "outputs": [],
       "source": [
         "# Rcuperamos de la regresión el valor del Log del costo estimado\n",
-        " = est2.predict(X)\n",
+        "X = est2.predict(X)\n",
         "# Anti-log:\n",
         "Y = np.exp( )\n",
         "# Colocamos en el Data Frame:\n",
