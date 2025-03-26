@@ -1474,7 +1474,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 71,
       "metadata": {
         "id": "2a7jrQwfgQHA"
       },
@@ -1497,7 +1497,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 32,
+      "execution_count": 72,
       "metadata": {
         "id": "uTS28se0gQHA"
       },
@@ -1509,10 +1509,10 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 33,
+      "execution_count": 73,
       "metadata": {
         "id": "hw_9hqUIgQHA",
-        "outputId": "f921e02a-6a86-4163-b915-9eabcd220bbc",
+        "outputId": "d0a487b5-4d1a-4363-988d-ab91188d7622",
         "colab": {
           "base_uri": "https://localhost:8080/"
         }
@@ -1549,23 +1549,40 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 78,
       "metadata": {
         "id": "EhSA8bLtgQHB"
       },
       "outputs": [],
       "source": [
         "# Establecemos la hipótesis #logaritmo\n",
-        "hypotheses_2 = ' +  +  = 0'"
+        "hypotheses_2 = ' Lplabor + Lpfuel + Lpkap = 0'"
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 79,
       "metadata": {
-        "id": "U1gy-bANgQHB"
+        "id": "U1gy-bANgQHB",
+        "outputId": "1cece299-1f92-4d2e-8b52-29c1076572bc",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "                             Test for Constraints                             \n",
+            "==============================================================================\n",
+            "                 coef    std err          t      P>|t|      [0.025      0.975]\n",
+            "------------------------------------------------------------------------------\n",
+            "c0             0.6720      0.102      6.598      0.000       0.470       0.874\n",
+            "==============================================================================\n"
+          ]
+        }
+      ],
       "source": [
         "# Prueba de la hipótesis:\n",
         "t_test_2 = results.t_test(hypotheses_2)\n",
@@ -1584,23 +1601,49 @@
     },
     {
       "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ORYCLd7b_qH2"
+      },
       "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 87,
       "metadata": {
         "id": "wnrnmPbQgQHB"
       },
       "outputs": [],
       "source": [
         "# Establecemos la hipótesis\n",
-        "hypotheses_3 = ' +  +  = 1'"
+        "hypotheses_3 =' Lplabor + Lpfuel + Lpkap = 0'"
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 88,
       "metadata": {
-        "id": "MEyGyHT5gQHC"
+        "id": "MEyGyHT5gQHC",
+        "outputId": "a151341d-e1ee-47fd-a92e-683321e576d9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "                             Test for Constraints                             \n",
+            "==============================================================================\n",
+            "                 coef    std err          t      P>|t|      [0.025      0.975]\n",
+            "------------------------------------------------------------------------------\n",
+            "c0             0.6720      0.102      6.598      0.000       0.470       0.874\n",
+            "==============================================================================\n"
+          ]
+        }
+      ],
       "source": [
         "# Prueba de la hipótesis:\n",
         "t_test_3 = results.t_test(hypotheses_3)\n",
@@ -1622,7 +1665,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 34,
+      "execution_count": null,
       "metadata": {
         "id": "4lZCdkzCgQHC",
         "outputId": "28f9ffe6-b037-4636-bd25-3aec68e75b23",
@@ -2069,7 +2112,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 35,
+      "execution_count": null,
       "metadata": {
         "id": "W9uzcDbBgQHC",
         "outputId": "8b93d9d9-6834-45f3-c2c6-f002b7843660",
@@ -2134,20 +2177,37 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 82,
       "metadata": {
-        "id": "27bm7gz7gQHC"
+        "id": "27bm7gz7gQHC",
+        "outputId": "dc58f5e0-a2b1-4f31-86f5-d2f1fc491ddd",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 211
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "exp() takes from 1 to 2 positional arguments but 0 were given",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-82-e5f31bd48325>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mX\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mest2\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpredict\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mX\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;31m# Anti-log:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mY\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mexp\u001b[0m\u001b[0;34m(\u001b[0m \u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      5\u001b[0m \u001b[0;31m# Colocamos en el Data Frame:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0mdataframe\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m'totcost_e'\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mY\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: exp() takes from 1 to 2 positional arguments but 0 were given"
+          ]
+        }
+      ],
       "source": [
         "# Rcuperamos de la regresión el valor del Log del costo estimado\n",
         "X = est2.predict(X)\n",
         "# Anti-log:\n",
         "Y = np.exp( )\n",
         "# Colocamos en el Data Frame:\n",
-        "['totcost_e'] = Y\n",
-        "['avgcost_e'] = [\"totcost_e\"]/  [\"output\"]\n",
-        ".head()"
+        "dataframe['totcost_e'] = Y\n",
+        "dataframe['avgcost_e'] = [\"totcost_e\"]/  [\"output\"]\n",
+        "dataframe.head()"
       ]
     },
     {
