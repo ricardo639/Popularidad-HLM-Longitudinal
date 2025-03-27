@@ -2681,12 +2681,12 @@
         "plt.savefig(\"grafico_avgcost.png\")"
       ],
       "metadata": {
-        "id": "4gOW2lhlO0BS",
-        "outputId": "bf8fbfae-864a-4e3b-cf31-08c6f47f3ede",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 504
-        }
+        },
+        "id": "4gOW2lhlO0BS",
+        "outputId": "bf8fbfae-864a-4e3b-cf31-08c6f47f3ede"
       },
       "execution_count": 40,
       "outputs": [
@@ -2716,11 +2716,11 @@
       "execution_count": 39,
       "metadata": {
         "id": "FY7rH5QegQHD",
-        "outputId": "01233c53-6e0a-445e-857d-9878bb5925da",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 612
-        }
+        },
+        "outputId": "01233c53-6e0a-445e-857d-9878bb5925da"
       },
       "outputs": [
         {
